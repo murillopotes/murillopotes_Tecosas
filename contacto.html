@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teco SAS</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome 5.15.1 CSS -->
+    <script src="https://kit.fontawesome.com/a53887caa8.js" crossorigin="anonymous"></script>
+    <style>
+
+        .encabezado{
+          height: 180px;
+          font-size: 24px;
+        }
+        .encabezado img {
+          width: 200px;
+          height: 160px;
+          box-shadow: 20px 20px 20px green;
+            
+        }
+
+        form {
+            width: 600px;
+            height: 400px;
+            border: 1px;
+            border-style: groove;
+            border-color: darkcyan;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 10px 10px 10px green;
+        }
+        #social img{
+            width: 50px;
+            height: 50px;
+            float: left;            
+            border-color: gray;
+            border-style: groove;
+            margin: 40px;            
+            position: sticky;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bg-light text-success text-center row encabezado">
+        <div class="col-sm-2">
+          <img src="logo.png" class="rounded-circle" alt="El Planeta">
+        </div>
+        <div class="col-sm-10 p-4">
+        <h1>TECO SAS </h1>
+         <p>¡Que bien se siente cuidar el <strong>Planeta</strong>!</p> 
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Quienes Somos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html#nosotros" target="nosotros">Nosotros</a></li>
+                  <li><a class="dropdown-item" href="index.html#valores" target="valores">Valores </a></li>
+                  <li><a class="dropdown-item" href="index.html#compromiso" target="compromiso">Compromiso</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+     <div class="row">
+        <div class="col-sm-6 text-center p-5">
+            <h3>Contactenos</h3>
+            <h5 >Te invitamos a descubrir más sobre nuestros productos y a unirte a nuestra misión de crear un futuro más sostenible. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. Estamos aquí para ayudarte a aprovechar al máximo la energía solar.</h5>
+           <div class="text-center" id="social" >
+                <a href="#"><img src="facebook.png" alt="facebook"></a>
+                <a href="#"><img src="instagram.jpg" alt="Instagram"> </a>
+                <a href=""><img src="twiter.jpg" alt="twiter"> </a> 
+                <a href=""><img src="tictoc.png" alt="tictoc"> </a> 
+           </div> 
+        </div>
+        <div class="col-sm-6">
+            <form action="">
+
+                <div class="mb-3 mt-3">
+                    <label for="nom" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Ingrese su nombre completo" name="nom">
+                  </div>
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ingrese el email" name="email">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="comment">Mensaje:</label>
+                    <textarea class="form-control" rows="4" id="comment" name="text"></textarea>
+                </div>
+               
+                <input type="button" class="btn btn-success" onclick="alert('Pronto lo contactaremos')" value="Enviar">
+              </form>
+    
+    
+        </div>
+
+     </div>
+        
+    </div>
+
+    <div class="p-4 bg-success text-white text-center">
+        <p>TECO SAS <br>
+          NIT: 800.260.702-7<br>
+          Direccion: Cra 24 N. 73-55<br>
+          Telefonos 2115588 – 3115558790<br>
+          Correo: tecosas@gmail.com
+          </p>
+      </div>
+      
+</body>
+</html>
